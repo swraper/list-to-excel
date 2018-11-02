@@ -1,6 +1,6 @@
 {
-  "name": "tabletoexcel",
-  "version": "1.0.0",
+  "name": "list-to-excel",
+  "version": "1.0.3",
   "description": "npm Component",
   "main": "index.js",
   "directories": {
@@ -14,46 +14,7 @@
   "author": "qingshan",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
-  },
-  "bin": {
-    "tableToExcel": "./lib/download.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.6",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-lodash": "^3.3.4",
-    "babel-plugin-import": "^1.6.7",
-    "babel-plugin-styled-components": "^1.5.1",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-remove-console": "^6.9.4",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.2.0",
-    "css-loader": "^0.28.10",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^3.0.6",
-    "eslint": "^5.1.0",
-    "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-react": "^7.10.0",
-    "less": "^3.0.1",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.20.3",
-    "vconsole": "^3.2.0",
-    "uglifyjs-webpack-plugin": "^1.2.3",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.3.0",
-    "webpack-bundle-analyzer": "^2.13.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.1"
   }
 }
