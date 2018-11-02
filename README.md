@@ -4,12 +4,46 @@
 
 ## Build Setup
 
-MIT License
-Copyright (c) <year> <copyright holders>
+## 说明
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    该项目为list导出为后缀为.xlsx的excel表格插件，其中string可通过download导出为txt文件。
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## 使用
+> npm install tableToExcel --save
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# 导出excel
+    import {tableToExcel,download} from tableToExcel;
+
+    const nav = [{
+        key:'id'
+    },{
+        key:'name'
+    },{
+        key:'age'
+    }];
+
+    const data = [{
+        id:'id_0001',
+        name:'tom',
+        age:'26'
+    },{
+        id:'id_0001',
+        name:'lucy',
+        age:'23'
+    }]
+
+    tableToExcel(nav,data,'实例表格导出');
+
+# 导出txt
+
+    const str = '这是一个文本文档实例。';
+
+    download(str,'文本文档');
+
+# Github地址：(https://github.com/swraper/lushhill).
+
+# version 1.0.0
+    excel导出，支持单文件最大6000条list数据，多余6000条的数据会进入第二个excel文件，因此，可支持大量数据，多文件导出。
+
+
 
