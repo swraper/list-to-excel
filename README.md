@@ -12,7 +12,7 @@
 > npm install list-to-excel --save
 
 # 导出excel
-    import {tableToExcel,download} from list-to-excel;
+    import {tableToExcel,download} from 'list-to-excel';
 
     const nav = [{
         key:'id'
@@ -30,7 +30,7 @@
         id:'id_0001',
         name:'lucy',
         age:'23'
-    }]
+    }];
 
     tableToExcel(nav,data,'实例表格导出');
 
@@ -40,11 +40,11 @@
 
     download(str,'文本文档');
 
-# Github地址：(https://github.com/swraper/tableToExcel.git).
+# Github地址：(https://github.com/swraper/list-to-excel.git).
 # npm地址：(https://www.npmjs.com/package/list-to-excel).
 
 # version 1.0.0
-    excel导出，支持单文件最大6000条list数据，多余6000条的数据会进入第二个excel文件，因此，可支持大量数据，多文件导出。
+    excel导出，支持单文件最大6000条list数据，多于6000条的数据进入第二个excel文件，并进行下载，因此，可支持大量数据，多文件导出。
 
 
 
